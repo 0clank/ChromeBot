@@ -1,0 +1,15 @@
+language: java
+sudo: true
+dist: trusty
+cache:
+  directories:
+  - $HOME/.m2
+  
+jdk: oraclejdk11
+
+install: true
+
+before_install:
+- chmod +x mvnw
+
+script: ./mvnw package -DskipTests
