@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://github.com/Qu1oX/ChromeBot">
-    <img alt="ChromeBot" title="ChromeBot" src="image/chromebot.png" width="350">
+    <img alt="ChromeBot" title="ChromeBot" src="resources/image/chromebot.png" width="350">
   </a>
   <br>
   <a href="https://travis-ci.org/Qu1oX/ChromeBot">
     <img src="https://img.shields.io/travis/qu1ox/ChromeBot?logo=travis%20ci" />
   </a>     
   <a href="https://www.codacy.com/manual/Qu1oX/ChromeBot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Qu1oX/ChromeBot&amp;utm_campaign=Badge_Grade">
-    <img src="https://www.codacy.com/manual/Qu1oX/ChromeBot?utm_source=github.com&utm_medium=referral&utm_content=Qu1oX/ChromeBot&utm_campaign=Badge_Grade" />
+    <img src="https://api.codacy.com/project/badge/Grade/7a8d3d0c7bdd46ee971055ab98fda2ed" />
   </a>
 </p>
 
