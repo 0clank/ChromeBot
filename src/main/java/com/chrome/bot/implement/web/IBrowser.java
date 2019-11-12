@@ -1,5 +1,8 @@
 package com.chrome.bot.implement.web;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 /**
  * ChromeBot <p>
  * IBrowser.java <p>
@@ -14,8 +17,8 @@ package com.chrome.bot.implement.web;
 public interface IBrowser {
 
     /**
-     * Opens the Browser to allow the controlling of elements <p>
-     * The Browser will be automatically open when using the BrowserFactory
+     * Opens the Browser to allow the controlling of elements. <p>
+     * The Browser will be automatically open when using the BrowserFactory.
      *
      * @return {@code true} if successfully opened the browser {@code false} if not
      */
@@ -35,4 +38,40 @@ public interface IBrowser {
      */
     boolean forceClose();
 
+    /**
+     * Redirects to the specified url.
+     *
+     * @param url Url to redirect to
+     */
+    void redirect(String url);
+
+    /**
+     * Find a 'WebElement' by a By object.
+     *
+     * @param by By object to find the WebElement
+     * @return The WebElement found
+     */
+    WebElement find(By by);
+
+    /**
+     * Finds a 'WebElement' by a By object and clicks it right after.
+     *
+     * @param by By object to find the WebElement to click
+     */
+    void click(By by);
+
+    /**
+     * Inserts a text into a 'WebElement' found by the By object. Have to be a writable html object.
+     *
+     * @param by By object to find the WebElement to insert text into
+     * @param charSequence String to add into the textfield
+     */
+    void insert(By by, String charSequence);
+
+    /**
+     * Inserts a 'Enter key' into a 'WebElement' found by the By object. Have to be a writable html object.
+     *
+     * @param by By object to find the WebElement to insert text into
+     */
+    void enter(By by);
 }
