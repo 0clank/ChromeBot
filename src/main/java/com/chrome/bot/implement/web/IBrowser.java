@@ -17,26 +17,18 @@ import org.openqa.selenium.WebElement;
 public interface IBrowser {
 
     /**
-     * Opens the Browser to allow the controlling of elements. <p>
-     * The Browser will be automatically open when using the BrowserFactory.
+     * Closes the browser tab.
      *
-     * @return {@code true} if successfully opened the browser {@code false} if not
+     * @return {@code true} if successfully closed the browser tab {@code false} if not
      */
-    boolean open();
-
-    /**
-     * Closes the browser.
-     *
-     * @return {@code true} if successfully closed the browser {@code false} if not
-     */
-    boolean close();
+    void close();
 
     /**
      * Forces the browser to close not matter what it's currently doing.
      *
      * @return {@code true} if successfully closed the browser {@code false} if not
      */
-    boolean forceClose();
+    void quit();
 
     /**
      * Redirects to the specified url.
