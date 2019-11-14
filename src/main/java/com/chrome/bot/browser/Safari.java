@@ -4,7 +4,7 @@ import com.chrome.bot.extend.web.Browser;
 
 /**
  * ChromeBot <p>
- * Firefox.java <p>
+ * Safari.java <p>
  * Safari implementation of a Browser
  *
  * @author q1x
